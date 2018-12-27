@@ -1,13 +1,13 @@
-CREATE DATABASE knights;
-use knights;
+CREATE DATABASE finvizd_db;
+use finvizd_db;
 
-CREATE TABLE favorite_colors (
-  name VARCHAR(20),
-  color VARCHAR(10)
+CREATE TABLE accounts (
+  username VARCHAR(20),
+  realname VARCHAR(40),
+  password VARCHAR(20)
 );
 
-INSERT INTO favorite_colors
-  (name, color)
+INSERT INTO accounts(username, realname, password)
 VALUES
-  ('Lancelot', 'blue'),
-  ('Galahad', 'yellow');
+  ('julmutea', 'Julmutea', 'julmutea'),
+  ('lemontea', 'Lemontea', 'lemontea');
