@@ -4,3 +4,7 @@ services:
         build: ./angular-client
         ports:
             - "5000:4200"
+    express-server:
+        build: ./express-server
+        ports:
+            - "5001:3000"
