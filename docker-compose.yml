@@ -1,16 +1,6 @@
-version: "2"
+version: "3"
 services:
-    app:
-        build: ./app
-        links:
-            - db
+    angular-client:
+        build: ./angular-client
         ports:
-            - "5000:5000"
-    db:
-        image: mysql:5.7
-        ports:
-            - "32000:3306"
-        environment:
-            MYSQL_ROOT_PASSWORD: root
-        volumes:
-            - ./db:/docker-entrypoint-initdb.d/:ro
+            - "5000:4200"
