@@ -1,10 +1,24 @@
 version: "3"
+
+networks:
+    privatenetwork:
+
 services:
     angular-client:
         build: ./angular-client
         ports:
             - "5000:4200"
+        networks:
+            - privatenetwork
     express-server:
         build: ./express-server
         ports:
             - "5001:3000"
+        networks:
+            - privatenetwork
+    mongodb:
+        image: mongo
+        expose: 
+            - "27017"
+        networks:
+            - privatenetwork
