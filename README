@@ -1,0 +1,7 @@
+# KOSPI log scale graph web service
+
+ KOSPI chart log scale graph service. 
+ It will use some open source graph service.
+ KOSPI data will be feed from some kind of web services.
+ It will be implemented using node.js.
+
